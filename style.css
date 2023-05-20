@@ -6,6 +6,7 @@ body {
     font-size: 12px;
     line-height: 18px;
 }
+
 a {
     text-decoration: none;
 }
@@ -38,7 +39,6 @@ a {
     margin: 43px 0 0 35px;
     position: relative;
 }
-
 .header-logo::before {
     content: "";
     background-image: url(img/logo.png);
@@ -86,10 +86,52 @@ a {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-
     font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
-.header_button:active {
+.header_button:active, .cloudbudget_button:active {
     box-shadow: 0 0 7px 1px rgb(100, 99, 99);
+}
+.cloudbudget {
+    padding-top: 157px;
+    text-align: center;
+}
+.cloudbudget_title {
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+}
+.cloudbudget_title::selection, .cloudbudget_text::selection, .header-logo::selection, .header_link::selection {
+    color: #ED4C5C;
+    background: #000;
+}
+.cloudbudget_text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cloudbudget_text:nth-last-child(2) {
+    margin-bottom: 55px;
+}
+.cloudbudget_button {
+    background-color: #fff;
+    color: #ED4C5C;
+    height: 50px;
+    padding: 17px 53px 17px 52px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
 }
